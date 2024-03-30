@@ -3,6 +3,7 @@ package curriculum_B;
 import java.util.Scanner;
 
 public class Qes7 {
+	
 	public static void main(String[] args) {
 		// 入力変数を用意
 		Scanner sc1 = new Scanner(System.in);

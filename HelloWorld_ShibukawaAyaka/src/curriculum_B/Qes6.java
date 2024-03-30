@@ -4,6 +4,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Qes6 {
+	
 	public static void main(String[] args) {
 		// 入力変数を用意
 		Scanner sc1 = new Scanner(System.in);

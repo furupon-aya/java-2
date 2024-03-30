@@ -5,6 +5,7 @@ public class Qes4 {
 
 	public static void main(String[] args) {
 		
+		
 		// 九九で使用する変数の宣言
 		String one = null;
 		String two = null;

@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Qes1_3 {
 
 	public static void main(String[] args) {
+		
 		Scanner sc1 = new Scanner(System.in);
 		String name = sc1.nextLine();
 
