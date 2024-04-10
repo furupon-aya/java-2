@@ -51,6 +51,7 @@ public class Qes7 {
 			System.out.println((q + 1) + "人目の平均点は" + studentAv + "点です。");
 
 		}
+		
 		// 改行
 		System.out.println();
 
