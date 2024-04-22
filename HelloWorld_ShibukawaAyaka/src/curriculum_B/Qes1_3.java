@@ -1,30 +1,36 @@
 package curriculum_B;
 
+//挿入
 import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Qes1_3 {
 
 	public static void main(String[] args) {
-		
+		//スキャナーを用意
 		Scanner sc1 = new Scanner(System.in);
+		//スキャナーで読みとったものを名前として登録
 		String name = sc1.nextLine();
-
-		String regex_AlphaNum = "^[A-Za-z0-9]+$";
-		if (regex_AlphaNum == name) {
-			System.out.println(name);
-		} else {
-			System.out.println("半角英数字のみで入力してください");
-		}
-
+		//半角英数字を用意
+		Pattern p = Pattern.compile("^[A-Za-z0-9]+$");
+		//入力されたもの文字を照合
+		Matcher m = p.matcher(name);
+		//入力された文字が半角英数字ではなかった場合
+		if (!m.find()) {
+            System.out.println("半角英数字のみで入力してください");
+        } 
+		//入力された文字が10文字以上だった場合
 		if (name.length() >= 10) {
 			System.out.println("名前を10文字以内にしてください");
-
+		//入力がなかった場合
 		} else if (name.isEmpty()) {
 			System.out.println("名前を入力してください");
-		} else {
-			System.out.println("ユーザー名「" + name + "」を登録しました");
 		}
-
+		
+		// スキャナーを閉じる
+		sc1.close();
+		
 		//1-3じゃんけんシステム
 		//手を用意
 		String[] hands = { "グー", "チョキ", "パー" };
