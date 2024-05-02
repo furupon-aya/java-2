@@ -10,27 +10,38 @@ public class Qes1_3 {
 	public static void main(String[] args) {
 		//スキャナーを用意
 		Scanner sc1 = new Scanner(System.in);
-		//スキャナーで読みとったものを名前として登録
-		String name = sc1.nextLine();
+		//変数nameを用意
+		String name = "";
 		//半角英数字を用意
 		Pattern p = Pattern.compile("^[A-Za-z0-9]+$");
-		//入力されたもの文字を照合
-		Matcher m = p.matcher(name);
-		//入力された文字が半角英数字ではなかった場合
-		if (!m.find()) {
-            System.out.println("半角英数字のみで入力してください");
-        } 
-		//入力された文字が10文字以上だった場合
-		if (name.length() >= 10) {
-			System.out.println("名前を10文字以内にしてください");
-		//入力がなかった場合
-		} else if (name.isEmpty()) {
-			System.out.println("名前を入力してください");
-		}
+		//照合するための変数を用意
+		Matcher m;
 		
+		while (true) {
+			//スキャナーで読みとったものを名前として登録
+			name = sc1.nextLine();
+			//入力されたもの文字を照合
+			m = p.matcher(name);
+
+			//入力された文字が半角英数字ではなかった場合
+			if (name.isEmpty()) {
+				System.out.println("名前を入力してください");
+			//入力された文字が10文字以上だった場合
+			} else if (name.length() >= 10) {
+				System.out.println("名前を10文字以内にしてください");
+			//入力がなかった場合
+			} else if (!m.find()) {
+				System.out.println("半角英数字のみで入力してください");
+			//正しい入力の場合
+			} else {
+				System.out.println("ユーザー名「" + name + "」を登録しました");
+				break;
+			}
+		}
+
 		// スキャナーを閉じる
 		sc1.close();
-		
+
 		//1-3じゃんけんシステム
 		//手を用意
 		String[] hands = { "グー", "チョキ", "パー" };
@@ -38,10 +49,9 @@ public class Qes1_3 {
 		String myHand = hands[2];
 		//相手の手
 		String cpu = hands[0];
-		//ユーザー名の出力
-		System.out.println("ユーザー名「" + name + "」を登録しました");
+
 		//自分の手の出力
-		System.out.println("nameの手は「" + myHand + "」");
+		System.out.println(name + "の手は「" + myHand + "」");
 		//相手の手の出力
 		System.out.println("相手の手は「" + cpu + "」");
 		//結果
