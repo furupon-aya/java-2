@@ -4,6 +4,7 @@ import java.util.Random;
 
 public class Curriculum_New_1_18 {
 	// Q1：引数に文字列型と整数型をいれてコンソールに「Hello JavaSE 11」と出力するメソッドを作成してください。
+	
 	//文字列型と整数型の引数を呼び出し
 	private static void add(String s, int num1) {
 		//呼び出した値をくっつけて出力
@@ -11,6 +12,7 @@ public class Curriculum_New_1_18 {
 	}
 
 	// Q2：引数に整数を渡すと渡した値同士を乗算しコンソールに出力するメソッドを作成してください
+	
 	//整数型の引数を呼び出し
 	private static void add2(int a, int b) {
 		//掛け算して出力
@@ -18,6 +20,7 @@ public class Curriculum_New_1_18 {
 	}
 
 	// Q3：引数として整数の配列を渡すと、受け取った値を順番にコンソールに出力するメソッドを作成してください
+	
 	//整数の配列を呼び出し
 	private static void add3(int[] i) {
 		//配列の中身を順番に取り出す
@@ -28,6 +31,7 @@ public class Curriculum_New_1_18 {
 	}
 
 	// Q4：Q2をオーバーロードして引数を小数2つに変更し、引数同士を和算しコンソールに出力してください。
+	
 	//小数型の引数を呼び出し
 	private static void add2(double a, double b) {
 		//足し算して出力
@@ -37,6 +41,7 @@ public class Curriculum_New_1_18 {
 	// Q5：引数に整数を渡すと、1～100までのランダムな数字を引数の回数分格納して
 	// 格納した値を順番にコンソールで出力後、格納した値を返すメソッドを作成してください。
 	// ※0は出力＆格納しないようにしてください。
+	
 	//格納する回数を呼び出し
 	private static int[] add5(int j) {
 		//呼び出した数字を格納する配列を作成
@@ -58,6 +63,7 @@ public class Curriculum_New_1_18 {
 
 	// Q6：引数にQ5で作成したメソッドの返り値を受け取り、受け取った配列の要素の平均値をコンソールに出力するメソッドを作成してください。
 	// ※小数点以下も表示されるようにしてください。
+	
 	//Q5で格納された数値を呼び出し
 	private static double add6(int[] a) {
 		//平均
@@ -78,6 +84,7 @@ public class Curriculum_New_1_18 {
 	}
 
 	// Q7：引数にQ6で作成したメソッドの返り値を受け取り、受け取った値が50以上ならばtrueそれ以外はfalseを返しコンソールに出力してください
+	
 	//Q6で出た平均を呼び出し
 	private static boolean add7(double ave) {
 		//判定式
