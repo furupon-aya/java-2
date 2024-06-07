@@ -119,7 +119,6 @@ public class Curriculum_New_1_18 {
 		//Q6
 		//Q7
 		System.out.println(add7(add6(add5(5))));
-
 	}
 
 }
