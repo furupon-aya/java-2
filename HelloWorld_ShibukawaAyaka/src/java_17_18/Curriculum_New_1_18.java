@@ -9,14 +9,14 @@ public class Curriculum_New_1_18 {
 		//呼び出した値をくっつけて出力
 		System.out.println(s + num1);
 	}
-	
+
 	// Q2：引数に整数を渡すと渡した値同士を乗算しコンソールに出力するメソッドを作成してください
 	//整数型の引数を呼び出し
 	private static void add2(int a, int b) {
 		//掛け算して出力
 		System.out.println(a * b);
 	}
-	
+
 	// Q3：引数として整数の配列を渡すと、受け取った値を順番にコンソールに出力するメソッドを作成してください
 	//整数の配列を呼び出し
 	private static void add3(int[] i) {
@@ -119,6 +119,7 @@ public class Curriculum_New_1_18 {
 		//Q6
 		//Q7
 		System.out.println(add7(add6(add5(5))));
+
 	}
 
 }
