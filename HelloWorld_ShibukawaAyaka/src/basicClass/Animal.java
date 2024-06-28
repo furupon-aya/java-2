@@ -22,7 +22,7 @@ public class Animal {
 		//オブジェクトを生成する
 		Calendar cl = Calendar.getInstance();
 		//フォーマットパターンを設定する
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy.MM.dd.HH:mm:ss");
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		System.out.println(sdf.format(cl.getTime()));
 
 	}

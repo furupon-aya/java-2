@@ -1,5 +1,6 @@
 package basicClass;
 
+
 public class Dog {
 	// Q1：フィールドに動物の名前の変数を定義してください。
 	String name;
