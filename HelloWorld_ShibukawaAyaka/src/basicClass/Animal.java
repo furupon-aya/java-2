@@ -18,9 +18,9 @@ public class Animal {
 		System.out.println(d2.animals);
 		
 		// 現在の日時を「yyyy-MM-dd H:m:s」形式で変数に代入して、コンソールに出力してください
-		//Calendarクラスのオブジェクトを生成する
+		//オブジェクトを生成する
 		Calendar cl = Calendar.getInstance();
-		//SimpleDateFormatクラスでフォーマットパターンを設定する
+		//フォーマットパターンを設定する
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy.MM.dd.HH:mm:ss");
 		System.out.println(sdf.format(cl.getTime()));
 
