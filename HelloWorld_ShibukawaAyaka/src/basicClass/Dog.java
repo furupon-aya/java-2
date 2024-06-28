@@ -14,7 +14,7 @@ public class Dog {
 
 	// Q4：Q2で作成した変数に引数を代入するコンストラクタを作成してください。
 	public Dog(int animals) {
-		//動物の数を代入
+		//動物の引数を代入
 		this.animals = animals;
 	}
 }
