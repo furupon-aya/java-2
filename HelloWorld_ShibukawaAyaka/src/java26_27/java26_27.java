@@ -19,8 +19,9 @@ public class java26_27 {
 		//animalsの数分ループする
 		for (int i = 0; i < animals.length; i++) {
 			//,で区切った文字列をさらに:で区切る
-			String[] animal = animals[i].split(":");
+			
 			//出力
+			String[] animal = animals[i].split(":");
 			System.out.println("動物名:" + animal[0]);
 			System.out.println("体長:" + animal[1] + "m");
 			System.out.println("速度:" + animal[2] + "km/h");
